@@ -3,7 +3,7 @@ const counterVogal = (message) => {
 
   const vogal = ['a', 'e', 'i', 'o', 'u']
 
-  const messageLetters = message.normalize('NFD').replace(/[^a-zA-Zs]/g, '').split('')
+  const messageLetters = message.normalize('NFD').toLowerCase().replace(/[^a-zA-Zs]/g, '').split('')
   
   const result = vogal.reduce((acc, letter) => {
     const letters = messageLetters.filter(item => item === letter)

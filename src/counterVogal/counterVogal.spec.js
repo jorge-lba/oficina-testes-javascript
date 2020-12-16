@@ -20,6 +20,15 @@ describe("Counter Vogal", () => {
     expect(result).toBe(responseExpected)
   })
 
+  it("Deve contar quantas vogais contem - A-E-I-O-U a-e-i-o-u",() => {
+    const inputValue = "A-E-I-O-U a-e-i-o-u"
+    const responseExpected = 10
+
+    const result = counterVogal(inputValue)
+
+    expect(result).toBe(responseExpected)
+  })
+
   it("Deve contar quantas vogais contem uma frase com 109 caracteres", () => {
     const inputValue = "Você pode encarar um erro como uma besteira a ser esquecida ou como um resultado que aponta uma nova direção."
     const responseExpected = 47
