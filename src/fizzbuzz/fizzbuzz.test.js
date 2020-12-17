@@ -37,15 +37,6 @@ describe('FizzBuzz', () => {
     expect(result).toEqual(responseExpected)
   })
 
-  it('Deve retornar o mesmo numero da entrada', () => {
-    const inputValue = [2]
-    const responseExpected = [2]
-
-    const result = fizzBuzz(inputValue)
-
-    expect(result).toEqual(responseExpected)
-  })
-
   it('Múltiplos valores de entrada', () => {
     const inputValue = [
       1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 
